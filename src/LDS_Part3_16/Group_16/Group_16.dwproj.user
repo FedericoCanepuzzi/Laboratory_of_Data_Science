@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Group 16 DB</Id>
+            <Name>Group 16 DB</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUE/G/b+vy02Z5N504DoKOAAAAAAYAAAARwByAG8AdQBwACAAMQA2ACAARABCAAAAEGYAAAABAAAgAAAA/ut7ei/USpIaKqFlDK0wmP6gPwGN2aA6vNcs42GJy2UAAAAADoAAAAACAAAgAAAALvAQlildIu8Zykqmmuvl855h4pndoa8YUm8WfuCsl4YgAAAAc720w3x6pDrXKrsJPW9mkzEuqYYAVzF2K5IxCQMzeFxAAAAA+iR1FDCqU095kJo1oCwBp+uFsgTjTntjij8ZPRpLHyOyY9LbFUnYypfn7janS0oFaSEvmAvsBxmToeNbJi+8Iw==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Group 16 DB</Id>
+            <Name>Group 16 DB</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUE/G/b+vy02Z5N504DoKOAAAAAAYAAAARwByAG8AdQBwACAAMQA2ACAARABCAAAAEGYAAAABAAAgAAAAxy6GX5JsHoyqqzYmMBEjJMP1paO9Rd2ucQNiCZbnM4QAAAAADoAAAAACAAAgAAAAxOTDzhTbWcbP9YbRh8VkV7AzAYxca9DYBfGbUkoAoJAgAAAA+cgFlxIfAIX6lBuU58GA0mRk3f8DFTPT1CNVKf46valAAAAAPw+sLq8nYWO5I0HPVgCCluwlc75VcY3m76Uuoz83QSxxDNk3R9DDZVtW07M0d0XZlIHGuyEljJd2NNvg5AgiSA==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>http://lds.di.unipi.it/olap/msmdpump.dll</TargetServer>
+        <TargetDatabase>Group_16</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

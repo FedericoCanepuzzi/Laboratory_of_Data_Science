@@ -1,0 +1,221 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="61a4d9bf-a0af-4aed-8363-a6aa4ee4cdd3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tournament</ID>
+  <Name>Tournament</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e041c911-fc25-4815-85a4-714f6a201f92">
+    <DataSourceViewID>Group 16 DB</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="e7e9dfa4-0d2e-4977-a0c5-06739886a9e3">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9ba954a0-337c-41b5-9e7b-d08086a46cb8">
+      <ID>Tourney Id</ID>
+      <Name>Tourney Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5cec0fe5-1f93-4c97-b913-c9e49349f6d9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8eb1372-c6a0-4be2-8e94-e2ebf07ebd1f">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>tourney_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ee31182a-90ac-46f1-a5d1-84efcb31dfaf">
+          <AttributeID>Tourney Name</AttributeID>
+          <Name>Tourney Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dc8d3758-9cd0-432a-a546-67e356a2f2b6">
+          <AttributeID>Surface</AttributeID>
+          <Name>Surface</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c0a5844-ed89-4245-aefb-82e636a6ddbd">
+          <AttributeID>Draw Size</AttributeID>
+          <Name>Draw Size</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c493ca5-ec77-4781-b318-2961feaf638e">
+          <AttributeID>Tourney Level</AttributeID>
+          <Name>Tourney Level</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a1d4ca8-23c7-48b6-adf5-d59088843e96">
+          <AttributeID>Tourney Spectators</AttributeID>
+          <Name>Tourney Spectators</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="52b7c42a-d5ea-41ba-915e-67d6e26ef375">
+          <AttributeID>Tourney Revenue</AttributeID>
+          <Name>Tourney Revenue</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="58a38931-b3ab-4884-b684-6c419ae8d886">
+          <AttributeID>Date Id</AttributeID>
+          <Name>Date Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7fd433b2-f3e9-4563-bdd8-3c4fe7b929a6">
+      <ID>Tourney Name</ID>
+      <Name>Tourney Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8fa95e5a-1b3e-444d-b4cd-ee1102e376e4">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31c107d4-68d3-4ee1-a705-6bb8de1cd05c">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>tourney_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="75070811-6f74-4190-8752-6df3398eab00">
+      <ID>Surface</ID>
+      <Name>Surface</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a80582a-a476-475f-9763-50a1f3145481">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbffa99c-b0ac-4eb3-b13c-5c53f47c1418">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>surface</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="684bb356-2682-4225-a6a5-a87be21a23f1">
+      <ID>Draw Size</ID>
+      <Name>Draw Size</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95ebadc2-9f87-4118-a9f5-8dd12c09cfd1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39bb48c5-1ebc-4c83-aaf0-79ee46a3b4b1">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>draw_size</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="646a8366-2d42-467e-a958-7ad8781b49b2">
+      <ID>Tourney Level</ID>
+      <Name>Tourney Level</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c97ec763-8e40-479d-85ac-2f36918dd236">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3152a94c-8772-499e-98b3-0aef427a3f4f">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>tourney_level</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5b8baf3c-1ab7-4f56-a149-e5f893c7351a">
+      <ID>Tourney Spectators</ID>
+      <Name>Tourney Spectators</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d00c89db-b7ff-42f2-9a0f-cb4742908dd7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1768e4c-b9d6-450c-bbf5-aca2c7db4136">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>tourney_spectators</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e66b5b52-3145-460c-8dfa-69268d98ac5c">
+      <ID>Tourney Revenue</ID>
+      <Name>Tourney Revenue</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8847803-53ea-4724-a31d-ad6603c65feb">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f88e7c2-555c-4b49-b9d7-67e539058e04">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>tourney_revenue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5c92845e-2761-436b-a4df-06cf1f643b71">
+      <ID>Date Id</ID>
+      <Name>Date Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="094be13c-53a5-447d-aedf-166b6a3ae1d7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9b48c75-644e-41c0-9032-93ffa843c2c3">
+            <TableID>Group_16_Tournament</TableID>
+            <ColumnID>date_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

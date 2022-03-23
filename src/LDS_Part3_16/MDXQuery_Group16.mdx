@@ -1,0 +1,42 @@
+--Assigment 1
+--Show the player that lost the most matches for each country
+
+select  [Measures].[Conteggio di Match] on columns,
+Generate([Loser - Country].[Country Ioc].[Country Ioc],
+topcount(nonempty(([Loser - Country].[Country Ioc].currentmember,
+[Loser].[Name].[Name])),1,[Measures].[Conteggio di Match])) on rows
+from [Group 16 DB]
+
+--Assignment 2
+--for each tournament, show the loser with the lowest total loser rank point
+
+select [Measures].[Loser Rank Points]on columns,
+Generate([Tournament].[Tourney Id].[Tourney Id],
+bottomcount(nonempty(([Tournament].[Tourney Id].currentmember,
+[Loser].[Name].[Name])),1, [Measures].[Loser Rank Points])) on rows
+from [Group 16 DB]
+
+--Assignment 3
+--for each tournament, show the loser with the highest ratio between his loser rank point
+-- and the average winner rank points of that tournament
+with member average_winner_point as 
+avg([Tournament].[Tourney Id].currentmember,[Measures].[Winner Rank Points])
+
+member ratio as
+[Measures].[Loser Rank Points] / average_winner_point,
+format_string="fixed"
+
+select {[Measures].[Loser Rank Points],average_winner_point, ratio} on columns,
+generate([Tournament].[Tourney Id].[Tourney Id],
+topcount(nonempty(([Tournament].[Tourney Id].currentmember,[Loser].[Name].[Name])),
+1,ratio)) on rows
+from [Group 16 DB]
+
+
+
+
+
+
+
+
+

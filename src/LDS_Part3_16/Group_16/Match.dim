@@ -1,0 +1,607 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fd46bf57-729f-490d-a1b3-43c466372183" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Match</ID>
+  <Name>Match</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1113" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5948" y="11303" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Match" left="62" top="-2223" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3683" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000630e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Group_16_Match" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1113</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>62</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2223</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2c6bba4b-94d9-441a-9df8-bb8e9c53e5f9">
+    <DataSourceViewID>Group 16 DB</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a10d6335-1175-4b1c-b6c8-5acafcf64329">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="c83b87b2-e17a-47bc-9cc2-7e612841573d">
+      <ID>Match Id</ID>
+      <Name>Match Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d163931c-f1f7-4b68-a38d-1f8839b11caf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e79834f9-9c5d-4fce-85a8-8b2b0f8bec2a">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>match_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="573ff2e4-fe9f-43ed-b326-8e5e4d99a1aa">
+          <AttributeID>Tourney Id</AttributeID>
+          <Name>Tourney Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bd2c4176-51dc-46c3-8e0b-0e69a665a132">
+          <AttributeID>Loser Id</AttributeID>
+          <Name>Loser Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e425967f-b913-4d35-b85f-9ae6e5322a9b">
+          <AttributeID>Winner Id</AttributeID>
+          <Name>Winner Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="be626d22-868c-450a-8e07-0c55e3cbabc4">
+          <AttributeID>Score</AttributeID>
+          <Name>Score</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a57bef10-b8aa-4a37-a35d-751a069695da">
+          <AttributeID>Best Of</AttributeID>
+          <Name>Best Of</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24db8224-8a6a-4688-b30d-ef4820ab2163">
+          <AttributeID>Round</AttributeID>
+          <Name>Round</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="353574ae-52a2-4db9-af53-39359e1772aa">
+          <AttributeID>Minutes</AttributeID>
+          <Name>Minutes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d92bfff-10c6-4528-bac9-c57f9606f16a">
+          <AttributeID>w Ace</AttributeID>
+          <Name>w Ace</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="16f71012-700d-4cfd-bace-cac13a73841f">
+          <AttributeID>w Df</AttributeID>
+          <Name>w Df</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c70cb738-1f45-42f3-af72-86940eb27f99">
+          <AttributeID>w Svpt</AttributeID>
+          <Name>w Svpt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="49608ada-fec8-4973-b629-50559b2c098f">
+          <AttributeID>w 1st In</AttributeID>
+          <Name>w 1st In</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="584e1d1e-19f0-4b1c-b437-db16ff385d52">
+          <AttributeID>w 1st Won</AttributeID>
+          <Name>w 1st Won</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9f6e7592-86d6-4440-98d0-31626be8f005">
+          <AttributeID>w 2nd Won</AttributeID>
+          <Name>w 2nd Won</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ba457b8b-30c6-45af-a12c-a19afc2a92d8">
+          <AttributeID>w Sv Gms</AttributeID>
+          <Name>w Sv Gms</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="328223f4-3f54-4f77-8943-5c41caece2da">
+          <AttributeID>w Bp Saved</AttributeID>
+          <Name>w Bp Saved</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2cb05ee5-cb6c-4b8e-971e-52382c98100a">
+          <AttributeID>w Bp Faced</AttributeID>
+          <Name>w Bp Faced</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="14425b9e-d087-4505-a002-47958162fb2f">
+          <AttributeID>l Ace</AttributeID>
+          <Name>l Ace</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80b32794-312b-44c2-ab56-e64b83f40f4b">
+          <AttributeID>l Df</AttributeID>
+          <Name>l Df</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2dc238bd-b197-4fb6-aff0-6ee1447b71bd">
+          <AttributeID>l Svpt</AttributeID>
+          <Name>l Svpt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="54c1546b-58d4-4810-9652-f19ba90170c0">
+          <AttributeID>l 1st In</AttributeID>
+          <Name>l 1st In</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f902c0dc-35f1-4d32-b97a-210931c53938">
+          <AttributeID>l 1st Won</AttributeID>
+          <Name>l 1st Won</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="425e9719-0913-43e6-a021-7511f86c7e19">
+          <AttributeID>l 2nd Won</AttributeID>
+          <Name>l 2nd Won</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fd6b4cb6-5ab9-4250-b3ee-b42b89cdf242">
+          <AttributeID>l Sv Gms</AttributeID>
+          <Name>l Sv Gms</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b4d8610f-b8fb-49dc-bdc4-6ee2a1f35809">
+          <AttributeID>l Bp Saved</AttributeID>
+          <Name>l Bp Saved</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1eda1f6-d7ba-440f-bb77-a3799143a73e">
+          <AttributeID>l Bp Faced</AttributeID>
+          <Name>l Bp Faced</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="503380ce-ec26-4c9c-a2e4-10026664c136">
+      <ID>Tourney Id</ID>
+      <Name>Tourney Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="49d5b362-fdae-480a-8bdf-45eaaa34590b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69e5d812-d167-438f-bbf3-d34e26ad339b">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>tourney_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5efb90ee-3d35-4662-92b6-d123d908f41b">
+      <ID>Loser Id</ID>
+      <Name>Loser Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66fee86f-6b7d-4719-8d04-e74545712cd0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a229e18-3cb2-4686-880b-146b2076138a">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>loser_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ca05dd68-77e8-499e-9e36-c83fb44914d2">
+      <ID>Winner Id</ID>
+      <Name>Winner Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a529432c-32f6-4233-999b-136d3a1e1678">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b488c037-e351-4285-980c-d8539a1b95a2">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>winner_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c7449ca0-4275-410a-a9ea-46c199d27eb4">
+      <ID>Score</ID>
+      <Name>Score</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7a4cceaa-db81-480b-9572-b60cdd98537b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1924d78-ae6e-4c49-9c22-00f12901d792">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="77f61b55-949b-475c-839a-8a9371f621c4">
+      <ID>Best Of</ID>
+      <Name>Best Of</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="815c5788-3c63-4995-8fce-612989229424">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7d7fd10-2c5e-42e1-8f79-7a6f7640cc84">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>best_of</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="acbf9284-e9e7-435c-ad2a-b047bdd286eb">
+      <ID>Round</ID>
+      <Name>Round</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a3a96395-31b4-4132-80ee-258e2725b3e3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f1e02f8-09db-4020-a727-f05d9c61eed0">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>round</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cf6d7ef9-49e0-434c-93cf-fe3742868bd9">
+      <ID>Minutes</ID>
+      <Name>Minutes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91f6eb26-41f6-4e28-8e87-0ce78d50d433">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2a5f5f4-6038-4151-9a3e-19f56fd9175b">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>minutes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bccc0416-7894-48a3-88f6-dddfa73ef668">
+      <ID>w Ace</ID>
+      <Name>w Ace</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e7206c3-67b7-4587-b104-cbc0b96f80eb">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10190c97-fb40-49cc-94f9-a471d68f3bbb">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_ace</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="24034bdc-c143-4f6f-aa37-518ecaf3d454">
+      <ID>w Df</ID>
+      <Name>w Df</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="49656626-a349-4a4b-a4cd-af4b12fd60b0">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e090f55-7e78-438d-a109-dbc4d140dff0">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_df</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce89de13-5ed4-47dc-86df-f94df0c4745b">
+      <ID>w Svpt</ID>
+      <Name>w Svpt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e7cfb2fa-e557-4aa4-8840-78e09248ea5f">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8e9fcaa6-dc68-40ae-8c5b-b6f66b0f7628">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_svpt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e94efd0b-25d3-496e-9c04-4bb52ae40a31">
+      <ID>w 1st In</ID>
+      <Name>w 1st In</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="06763b53-b1d8-4872-a765-b7049bff6e2b">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a4acfc2-34f3-4e01-9647-38d57e76f50e">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_1stIn</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8af5d95-6e80-4503-878f-57814268a789">
+      <ID>w 1st Won</ID>
+      <Name>w 1st Won</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a038bba-8089-464b-bf4b-3bd4f61ed5d6">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2942ccf2-d4a3-4fa0-8d4f-0ceae8759534">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_1stWon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ca5b72bc-e9b9-4e70-9fb4-07205121c0ec">
+      <ID>w 2nd Won</ID>
+      <Name>w 2nd Won</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80b7cc25-38e1-4ef0-a0ea-1ab41e7e7642">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc77a22c-b20f-4e6c-8cc4-f124a3159641">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_2ndWon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1c7130bd-2de4-4e90-81c8-16683801f399">
+      <ID>w Sv Gms</ID>
+      <Name>w Sv Gms</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54178e51-c558-4f13-bf33-67e764eac15b">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72e7cf55-e6cc-45b1-97ab-6c3a4afc82e4">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_SvGms</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ae98130c-db55-470b-a670-6991d4bd0234">
+      <ID>w Bp Saved</ID>
+      <Name>w Bp Saved</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6ad525b-d890-4595-a983-2bc304c78ac7">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3997058c-4e10-48ac-8d04-94f7900130a2">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_bpSaved</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="333da2c0-46c7-40a1-9597-c4083a63733e">
+      <ID>w Bp Faced</ID>
+      <Name>w Bp Faced</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0851a159-8001-4175-94a9-06120464e7d7">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="18d45e70-29ae-4a40-9422-79b544633847">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>w_bpFaced</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="83b90964-812e-45de-9afb-c174657fe29d">
+      <ID>l Ace</ID>
+      <Name>l Ace</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78d80819-9d1e-4a58-b8af-d71083dd429a">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="626a5d4d-b942-44e2-a49c-7c6cf7034353">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_ace</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="71867e3c-8e07-41fc-b100-f7cf4fe4d7c5">
+      <ID>l Df</ID>
+      <Name>l Df</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89ebe959-f115-4638-b5f8-deef87dd45b1">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a81e29f6-58ea-412e-885a-4fd83b4baf52">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_df</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e7e6c606-07fa-47a5-b9e0-18a717a02502">
+      <ID>l Svpt</ID>
+      <Name>l Svpt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="568f6193-8998-4ab9-88ad-c94aa81d2ce2">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a44689b9-73eb-4989-a300-0da3178d9a42">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_svpt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e78c9868-4da2-4fbc-b28d-798c2f8a7487">
+      <ID>l 1st In</ID>
+      <Name>l 1st In</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b906a0d-f99e-4ad8-b3a3-5b9baa19a83b">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3028ea5d-ba07-493a-a768-2cc8e5da2d9e">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_1stIn</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6cadf40c-e700-48d2-a37b-dc1ec3252e8c">
+      <ID>l 1st Won</ID>
+      <Name>l 1st Won</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc47caca-a35d-4df8-a5ca-230fe9c096aa">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed9316b0-1ddb-46f0-89d8-cf59fcfd4069">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_1stWon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dc03cc71-0a07-4c37-9552-bc958e448138">
+      <ID>l 2nd Won</ID>
+      <Name>l 2nd Won</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ccc9f74d-3cb4-49b2-ae1a-83d24ac5d364">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3f9da5a-bc0f-4875-856d-9b775b300e0e">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_2ndWon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bdf2053d-b530-4300-96f2-2f15c923b1b4">
+      <ID>l Sv Gms</ID>
+      <Name>l Sv Gms</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a542eb3-919d-4f53-bd8c-27ffb660f873">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab06d9c3-530f-4561-bb1c-f72d3003f30f">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_SvGms</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b644afa7-da8a-4225-be46-e077c6d0aa02">
+      <ID>l Bp Saved</ID>
+      <Name>l Bp Saved</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d5b16d7-a4e1-415f-83ed-54c9ffd4206f">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ed47195-18c8-4ecb-871a-8dc3c24a5da0">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_bpSaved</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a881a93c-14d7-4f59-b777-a04fc2435f42">
+      <ID>l Bp Faced</ID>
+      <Name>l Bp Faced</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="812b61ec-bec5-4130-8305-43bac17ea51f">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee994cad-9f3b-42f7-91c4-4f94da8a10c6">
+            <TableID>Group_16_Match</TableID>
+            <ColumnID>l_bpFaced</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
